@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_square_contribs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.git.gitsquare.SquareContribsActivity">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvFilterContribs">
+
+    <ListView
+        android:id="@+id/lvUserDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tvFilterContribs"
+        android:layout_marginBottom="5dp"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/tvFilterContribs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/gray_lighter"
+        android:layout_alignParentBottom="true"
+        android:text="@string/filter_contribs"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="16sp"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:id="@+id/layProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blacktrans"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:scrollbars="none"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible" />
+    </LinearLayout>
+
+</RelativeLayout>

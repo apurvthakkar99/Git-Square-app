@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Git Square</string>
+    <string name="filter_contribs">Filter Contributions</string>
+    <string name="contributions">"Contributions : "</string>
+    <string name="contributed_repos">Contributed Repos</string>
+    <string name="no_internet">No Internet Connection!</string>
+</resources>
